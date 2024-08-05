@@ -48,7 +48,7 @@ namespace Inscripciones.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("alumnos");
+                    b.ToTable("alumnos", (string)null);
 
                     b.HasData(
                         new
@@ -80,7 +80,7 @@ namespace Inscripciones.Migrations
 
                     b.HasIndex("CarreraId");
 
-                    b.ToTable("anioscarreras");
+                    b.ToTable("anioscarreras", (string)null);
 
                     b.HasData(
                         new
@@ -267,7 +267,7 @@ namespace Inscripciones.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("anioslectivos");
+                    b.ToTable("anioslectivos", (string)null);
 
                     b.HasData(
                         new
@@ -291,7 +291,7 @@ namespace Inscripciones.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("carreras");
+                    b.ToTable("carreras", (string)null);
 
                     b.HasData(
                         new
@@ -364,7 +364,7 @@ namespace Inscripciones.Migrations
 
                     b.HasIndex("MateriaId");
 
-                    b.ToTable("detallesinscripciones");
+                    b.ToTable("detallesinscripciones", (string)null);
                 });
 
             modelBuilder.Entity("Inscripciones.Models.DetalleMesaExamen", b =>
@@ -390,7 +390,7 @@ namespace Inscripciones.Migrations
 
                     b.HasIndex("MesaExamenId");
 
-                    b.ToTable("detallesmesasexamenes");
+                    b.ToTable("detallesmesasexamenes", (string)null);
 
                     b.HasData(
                         new
@@ -4273,7 +4273,7 @@ namespace Inscripciones.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("docentes");
+                    b.ToTable("docentes", (string)null);
 
                     b.HasData(
                         new
@@ -4666,7 +4666,7 @@ namespace Inscripciones.Migrations
 
                     b.HasIndex("CarreraId");
 
-                    b.ToTable("inscripciones");
+                    b.ToTable("inscripciones", (string)null);
                 });
 
             modelBuilder.Entity("Inscripciones.Models.Materia", b =>
@@ -4688,7 +4688,7 @@ namespace Inscripciones.Migrations
 
                     b.HasIndex("AnioCarreraId");
 
-                    b.ToTable("materias");
+                    b.ToTable("materias", (string)null);
 
                     b.HasData(
                         new
@@ -6301,7 +6301,7 @@ namespace Inscripciones.Migrations
 
                     b.HasIndex("TurnoExamenId");
 
-                    b.ToTable("mesasexamenes");
+                    b.ToTable("mesasexamenes", (string)null);
 
                     b.HasData(
                         new
@@ -7562,7 +7562,7 @@ namespace Inscripciones.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("turnosexamenes");
+                    b.ToTable("turnosexamenes", (string)null);
 
                     b.HasData(
                         new
